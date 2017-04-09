@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0EAF4BD-F73B-4AE5-AC7B-77EF5CD74599}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharpStructures</RootNamespace>
+    <AssemblyName>SharpStructures</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArrayQueue.cs" />
+    <Compile Include="Assertion.cs" />
+    <Compile Include="AssertionFailedException.cs" />
+    <Compile Include="AssertionTest.cs" />
+    <Compile Include="BinaryTree.cs" />
+    <Compile Include="BinaryTreeInorderIterator.cs" />
+    <Compile Include="BinaryTreeLevelorderIterator.cs" />
+    <Compile Include="BinaryTreeNode.cs" />
+    <Compile Include="BinaryTreeNodeTest.cs" />
+    <Compile Include="BinaryTreePostorderIterator.cs" />
+    <Compile Include="BinaryTreePreorderInterator.cs" />
+    <Compile Include="BinaryTreeTest.cs" />
+    <Compile Include="CircularList.cs" />
+    <Compile Include="DoublyLinkedList.cs" />
+    <Compile Include="DoublyLinkedListElement.cs" />
+    <Compile Include="DoublyLinkedListElementTest.cs" />
+    <Compile Include="Iterator.cs" />
+    <Compile Include="IteratorTest.cs" />
+    <Compile Include="List.cs" />
+    <Compile Include="ListQueue.cs" />
+    <Compile Include="ListStack.cs" />
+    <Compile Include="ListTest.cs" />
+    <Compile Include="Matrix.cs" />
+    <Compile Include="MatrixTest.cs" />
+    <Compile Include="PriorityQueue.cs" />
+    <Compile Include="PriorityQueueTest.cs" />
+    <Compile Include="Queue.cs" />
+    <Compile Include="QueueTest.cs" />
+    <Compile Include="SinglyLinkedList.cs" />
+    <Compile Include="SinglyLinkedListElement.cs" />
+    <Compile Include="SinglyLinkedListElementTest.cs" />
+    <Compile Include="Sort.cs" />
+    <Compile Include="SortTest.cs" />
+    <Compile Include="Stack.cs" />
+    <Compile Include="StackTest.cs" />
+    <Compile Include="Vector.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VectorHeap.cs" />
+    <Compile Include="VectorIterator.cs" />
+    <Compile Include="VectorQueue.cs" />
+    <Compile Include="VectorStack.cs" />
+    <Compile Include="VectorTest.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
